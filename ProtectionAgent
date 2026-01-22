@@ -1,0 +1,17 @@
+import { hidePost, flagUser } from '../services/xClient.js'
+
+const spamKeywords = ['airdrop', 'free', 'link', 'claim']
+
+export async function protectionAgent(post) {
+  const isSpam = spamKeywords.some(k =>
+    post.text.toLowerCase().includes(k)
+  )
+
+  if (isSpam) {
+    await hidePost(post.id)
+    await flagUser(post.user)
+    return 'blocked'
+  }
+
+  return 'clean'
+}
