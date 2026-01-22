@@ -1,0 +1,8 @@
+import 'dotenv/config'
+
+export const config = {
+  X_API_KEY: process.env.X_API_KEY,
+  X_API_SECRET: process.env.X_API_SECRET,
+  COMMUNITY_ID: process.env.COMMUNITY_ID,
+  MODE: 'autonomous'
+}
