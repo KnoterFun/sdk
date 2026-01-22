@@ -55,6 +55,3 @@ Just a community that runs itself.
 
 ---
 
-## 🔐 Token Information
-
-Official CA:
