@@ -1,0 +1,13 @@
+{
+  "name": "knoter",
+  "version": "0.1.0",
+  "description": "Autonomous community protection, moderation, and growth tools for X",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.0",
+    "node-fetch": "^3.3.2"
+  }
+}
