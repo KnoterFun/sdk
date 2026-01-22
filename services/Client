@@ -1,0 +1,14 @@
+export async function fetchMentions() {
+  return [
+    { id: 1, user: 'bot123', text: 'free airdrop link!!!' },
+    { id: 2, user: 'real_user', text: 'great project' }
+  ]
+}
+
+export async function hidePost(postId) {
+  console.log(`[X] Post ${postId} hidden`)
+}
+
+export async function flagUser(username) {
+  console.log(`[X] User ${username} flagged`)
+}
